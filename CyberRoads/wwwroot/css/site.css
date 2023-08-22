@@ -16,3 +16,17 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.CenteredContainer{
+    position:absolute;
+    transform:translate(-50%,-50%);
+    top:50%;
+    left:50%;
+
+}
+
+    .CenteredContainer form {
+        background: linear-gradient(to left, #008000, #008000);
+        padding: 3em;
+        border-radius: 20px;
+    }
