@@ -17,6 +17,7 @@ body {
   margin-bottom: 60px;
 }
 
+<<<<<<< Updated upstream
 .CenteredContainer{
     position:absolute;
     transform:translate(-50%,-50%);
@@ -30,3 +31,13 @@ body {
         padding: 3em;
         border-radius: 20px;
     }
+=======
+html {
+    position: relative;
+    min-height: 20%;
+}
+
+body {
+    margin-bottom: 50px;
+}
+>>>>>>> Stashed changes
