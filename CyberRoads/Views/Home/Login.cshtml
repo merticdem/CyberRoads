@@ -1,21 +1,33 @@
-﻿@page
-@model CyberRoads.Views.Home.LoginModel
-@{
+﻿@{
     ViewData["Tittle"] = "Log in";
 
 
 }
 
+<head>
+    <link href=""~/Scripts/Login.css" rel="stylesheet" />
+</head>
 
-<div class="row">
-    <div class="col-3 container CenteredContainer">
-        <selection>
-            <fore id="accont" method="post">
-                <h5>Welcome   </h5>
+<body>
+        <div class="container">
+            <section id ="content">
+                <form action="">
+                    <h1>Login Form</h1>
+                    <div>
+                        <input type ="text" placeholder="Username" required="" id="username"/>
+                    </div>
+                    <div>
+                        <input type="password" placeholder="Password" required="" id="password" />
+                    </div>
+                    <div>
+                        <input type="submit" value="Log in"/>
+                        <a href="Register">Lost your password ?</a>
+                        <a href="#">Register</a>
+                    </div>
+                </form><!-- Form -->
+                <div class="button">
+                </div><!-- button-->
+            </section><!-- content-->
 
-            </fore>
-        </selection>
-
-    </div>
-
-</div>
+        </div><!-- container-->
+</body>
