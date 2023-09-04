@@ -1,15 +1,13 @@
 ﻿using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.EntityFrameworkCore;
+using System.Data.Entity;
 
 namespace CyberRoads.Models
 {
-    public class DataContext: DbContext
+    public class DataContext:IdentityDbContext
     {
-        public DataContext(DbContextOptions<DataContext> options)
-            : base(options) 
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-
         }
-        public DbSet<SignIn> SignIns { get; set; }
     }
 }
